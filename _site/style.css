@@ -1,3 +1,10 @@
+html { 
+  background: url(h.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body {
     color: #444;
     font-family: 'Sorts Mill Goudy', Georgia, serif;
@@ -16,7 +23,7 @@ a { color: black; }
     text-align: justify;
     line-height: 1.3em;
     width: 29em;
-    margin: 3em auto 2em;
+    margin: 3em 0 2em;
 }
 
 .publications li { margin-bottom: 1em; }
