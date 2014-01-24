@@ -15,15 +15,14 @@ a { color: black; }
 .header, .site {
     text-align: justify;
     line-height: 1.3em;
-    /* width: 29em; */
-    width: 480px;
+    width: 29em;
     margin: 3em auto 2em;
 }
+
+.publications li { margin-bottom: 1em; }
 
 .header a { text-decoration: none; }
 
 .center {
     text-align: center;
     display: block; }
-
-.toppad { margin-top: 2em; }
