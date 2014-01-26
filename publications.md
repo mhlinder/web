@@ -6,7 +6,7 @@ title: Publications
 1. "[Compensation Growth and Slack in the Current Economic
 Environment](http://libertystreeteconomics.newyorkfed.org/2012/11/compensation-growth-and-slack-in-the-current-economic-environment.html),"
 with Richard Peach and Robert Rich.
-Liberty Street Economics Blog, November 19, 2012.
+*Liberty Street Economics Blog*, November 19, 2012.
 2. "[The Effect of Superstorm Sandy on the
 Macroeconomy](http://libertystreeteconomics.newyorkfed.org/2013/04/the-effect-of-superstorm-sandy-on-the-macroeconomy.html),"
 with Richard Peach and Sarah Stein.
