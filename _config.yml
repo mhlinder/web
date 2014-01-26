@@ -1,3 +1,2 @@
 name: M. Henry Linder
-markdown: redcarpet
-pygments: true
+markdown: kramdown

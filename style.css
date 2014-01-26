@@ -13,17 +13,16 @@ h1, h2, h3, h4, h5, h6 {
 a { color: black; }
 
 .header, .site {
-    text-align: justify;
-    line-height: 1.3em;
-    /* width: 29em; */
-    width: 480px;
+    /* text-align: justify; */
+    line-height: 1.2em;
+    width: 35em;
     margin: 3em auto 2em;
 }
+
+.publications li { margin-bottom: 1em; }
 
 .header a { text-decoration: none; }
 
 .center {
     text-align: center;
     display: block; }
-
-.toppad { margin-top: 2em; }
