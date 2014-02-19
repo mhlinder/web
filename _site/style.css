@@ -11,12 +11,16 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1em; }
 
 a { color: black; }
+.noline { text-decoration: none; }
 
 .header, .site {
-    /* text-align: justify; */
     line-height: 1.2em;
     width: 35em;
     margin: 3em auto 2em;
+}
+
+.wide {
+    width: 800px;
 }
 
 .publications li { margin-bottom: 1em; }
