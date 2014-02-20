@@ -10,5 +10,5 @@ title: M. Henry Linder
 [Publications](publications.html)
 {: .center }
 
-**[Inquiries](mailto:mhlinder@gmail.com)**
+[Inquiries](mailto:mhlinder@gmail.com)
 {: .center }

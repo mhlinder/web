@@ -25,4 +25,8 @@ Model](http://www.newyorkfed.org/research/staff_reports/sr647.html),"
 with Marco Del Negro, Stefano Eusepi, Marc Giannoni, Argia Sbordone, Andrea
 Tambalotti, Matthew Cocci and Raiden Hasegawa.
 *Staff Reports*, Federal Reserve Bank of New York, No. 647, 2013.
+6. "[The Long and Short of It: The Impact of Unemployment Duration on
+Compensation Growth](http://libertystreeteconomics.newyorkfed.org/2014/02/the-long-and-short-of-it-the-impact-of-unemployment-duration-on-compensation-growth-.html),"
+with Richard Peach and Robert Rich.
+*Liberty Street Economics Blog*, February 12, 2014. 
 {: .publications}
