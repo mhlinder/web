@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+a {
+    color: black;
+}
+.main {
+    width: 600px;
+    font-family: "Courier", monospace;
+    font-size: 10pt;
+}
+</style>
+</head>
+
+<body>
+
+<div class="main">
+    [<a href="resume.html">M. HENRY LINDER</a>]
+    <br />
+    <br />
+
+    &nbsp;&nbsp;###&nbsp;&nbsp;##&nbsp;&nbsp;##<br />
+    &nbsp;&nbsp;#######&nbsp;&nbsp;##<br />
+    &nbsp;&nbsp;##&nbsp;#&nbsp;######<br />
+    &nbsp;&nbsp;##&nbsp;&nbsp;&nbsp;##&nbsp;&nbsp;##<br />
+    &nbsp;&nbsp;##&nbsp;&nbsp;&nbsp;##&nbsp;&nbsp;####<br />
+
+</div>
+
+</body>
+
+</html>
