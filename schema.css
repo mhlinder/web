@@ -1,0 +1,12 @@
+a {
+    color: black;
+}
+
+.main {
+    width: 600px;
+    font-size: 10pt;
+}
+
+.mono {
+    font-family: "Courier", monospace;
+}
