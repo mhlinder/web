@@ -18,9 +18,20 @@ a {
 }
 
 .header {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+}
+
+.item {
+    padding-bottom: 25px;
 }
 
 h1 {
     text-align: center;
 }
+
+hr {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
