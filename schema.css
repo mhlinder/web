@@ -3,17 +3,22 @@ a {
 }
 
 .main {
-    width: 600px;
-    font-size: 11pt;
+    padding-bottom: 20px;
 }
 
 .mono {
     font-family: "Courier", monospace;
 }
 
-.center {
+.container {
     margin-left: auto;
     margin-right: auto;
+    width: 600px;
+    font-size: 11pt;
+}
+
+.header {
+    padding-bottom: 20px;
 }
 
 h1 {
