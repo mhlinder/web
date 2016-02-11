@@ -21,6 +21,10 @@ a {
     padding-bottom: 25px;
 }
 
+.header h2 {
+    font-style: normal;
+}
+
 .item {
     padding-bottom: 25px;
 }
