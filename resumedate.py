@@ -11,6 +11,6 @@ tomorrow = today + datetime.timedelta(days=1)
 s = s.substitute(tomorrow = tomorrow.strftime("%d %b %y").upper(),
                  today = today.strftime("%d %b %y").upper())
 
-with open('resume2.html', 'w') as f:
+with open('resume.html', 'w') as f:
     f.write(s)
     
