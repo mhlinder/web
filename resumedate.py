@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 import datetime
 from string import Template
@@ -13,4 +14,4 @@ s = s.substitute(tomorrow = tomorrow.strftime("%d %b %y").upper(),
 
 with open('resume.html', 'w') as f:
     f.write(s)
-    
+

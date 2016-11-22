@@ -34,6 +34,11 @@ h1 {
     text-align: center;
 }
 
+h1.left {
+    text-align: left;
+    font-size: 14px;
+}
+
 hr {
     margin: 0px;
     padding: 0px;

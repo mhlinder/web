@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="schema.css">
+  <link rel="stylesheet" type="text/css" href="schema.css?b=c">
   <title>resume - mhlinder</title>
 </head>
 
@@ -13,13 +13,13 @@
     <br />
     <br />
 
-    [<a href="https://github.com/mhlinder">$tomorrow</a>]
+    [<a href="https://twitter.com/mhlinder">$tomorrow</a>]
 
     <br />
     <br />
 
     [25 AUG 14 -<br />
-     &nbsp;$today&nbsp;UCONN]
+    &nbsp;$today&nbsp;UCONN]
 
     <br />
     <br />

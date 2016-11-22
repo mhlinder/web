@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cd ~/research/web
-python resumedate.py
-scp resume.html mhlinder@mhlinder.com:~/public_html
+./resumedate.py
+./music.py
+scp index.html resume.html music.html schema.css mhlinder@mhlinder.com:~/public_html
 
