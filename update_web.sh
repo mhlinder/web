@@ -3,5 +3,5 @@
 cd ~/research/web
 ./resumedate.py
 ./music.py
-scp index.html resume.html music.html schema.css mhlinder@mhlinder.com:~/public_html
+scp index.html schema.css resume.html music.html mhlinder@mhlinder.com:~/public_html
 
