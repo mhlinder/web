@@ -13,13 +13,18 @@
     <br />
     <br />
 
-    [<a href="https://twitter.com/mhlinder">$tomorrow</a>]
+    [<a href="https://twitter.com/mhlinder">
+      <?php
+      $tomorrow = new DateTime('tomorrow');
+      echo strtoupper($tomorrow->format('d M y'));
+      ?></a>]
 
     <br />
     <br />
 
     [25 AUG 14 -<br />
-    &nbsp;$today&nbsp;UCONN]
+    &nbsp;<?php echo strtoupper(date('d M y')); ?>&nbsp;UCONN]
+      
 
     <br />
     <br />

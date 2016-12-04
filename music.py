@@ -23,10 +23,11 @@ for i in range(len(pl)):
     songs = soup.findAll('a', {'class': 'yt-uix-tile-link'})
 
     tmp = '{0}\n<li><a href="{1}">{2}</a></li>'
+
     yt_playlists = tmp.format(yt_playlists, urls[i], titles[i])
 
-s = s.substitute(yt_playlists = yt_playlists)
+#s = s.substitute(yt_playlists = yt_playlists)
 
 with open('music.html', 'w') as f:
-    f.write(s)
+    f.write(yt_playlists)
 

@@ -22,7 +22,7 @@
   <ul>
     <li><b>playlists</b>
       <ul>
-        $yt_playlists
+        <?php include('music.html'); ?>
       </ul>
     </li>
   </p>
@@ -31,3 +31,4 @@
 </body>
 
 </html>
+
