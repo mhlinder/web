@@ -1,0 +1,34 @@
+
+<html>
+
+  <head>
+
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="title">
+        <h1 id="toggle">This is the title</h1>
+      </div>
+
+      <div id="hidden" class="body" style="display: none;">
+        This is hidden, to start.
+      </div>
+
+      <script>
+       function toggle_visible() {
+           var hidden = document.getElementById('hidden');
+           if (hidden.style.display == 'none') {
+               document.getElementById('hidden').style.display = 'block';
+           } else {
+               document.getElementById('hidden').style.display = 'none';
+           }
+       }
+       document.getElementById('toggle').addEventListener('click',
+                                                          toggle_visible);
+    </script>
+
+  </body>
+
+</html>
+
