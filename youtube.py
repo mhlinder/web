@@ -4,9 +4,6 @@ from bs4 import BeautifulSoup
 from requests import get
 from string import Template
 
-with open('music.tmp', 'r') as f:
-    s = Template(f.read())
-
 base = 'https://www.youtube.com'
 r = get('{}/channel/UCigt36ux93khwf5UzwWhX_A/playlists'.format(base))
 soup = BeautifulSoup(r.text)
@@ -26,8 +23,6 @@ for i in range(len(pl)):
 
     yt_playlists = tmp.format(yt_playlists, urls[i], titles[i])
 
-#s = s.substitute(yt_playlists = yt_playlists)
-
-with open('music.html', 'w') as f:
+with open('youtube.html', 'w') as f:
     f.write(yt_playlists)
 

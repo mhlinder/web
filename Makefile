@@ -1,10 +1,13 @@
 
-.PHONY: music resume update
+.PHONY: youtube resume update Library
 
-music:
-	python music.py
+youtube:
+	python youtube.py
 resume:
 	python resumedate.py
 update:
 	/home/mlinder/research/web/update_web.sh
+
+Library:
+	cp ~/Music/iTunes/iTunes\ Music\ Library.xml x/
 
