@@ -97,7 +97,7 @@ with open('x/playlists.html', 'w') as f:
 
 <li><div id="{0}">
   <strong><a href="#" id="{0}-title">{1}</a></strong>
-  <div id="{0}-body" style="display: none;">\n<ul>'''.format(season, season.replace('--', '&ndash;')))
+  <div id="{0}-body" style="display: none;">\n<ul class="space-after">'''.format(season, season.replace('--', '&ndash;')))
 
         # Loop over playlists
         season_pls = numbers_pl[season]
@@ -117,10 +117,10 @@ with open('x/playlists.html', 'w') as f:
 
 
     <li><div id="{1}">
-      <strong><a href="#" id="{1}-title">{0}</a></strong>
+      <a href="#" id="{1}-title">{0}</a>
     
       <div id="{1}-body" style="display: none;">
-        <ol>
+        <ol class="space-after">
           {2}
         </ol>
       </div> <!-- #{1}-body -->
@@ -135,7 +135,7 @@ with open('x/playlists.html', 'w') as f:
 </ul>
 
 <script>
-    var playlists = ['{0}'];
+    var playlists = ['youtube', '{0}'];
     for (i = 0; i < playlists.length; i++) {{
         var pl_key = playlists[i];
         function toggle_visible(x) {{

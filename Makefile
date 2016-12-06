@@ -6,7 +6,7 @@ youtube:
 resume:
 	python resumedate.py
 update:
-	/home/mlinder/research/web/update_web.sh
+	bash update_web.sh
 
 Library:
 	cp ~/Music/iTunes/iTunes\ Music\ Library.xml x/

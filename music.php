@@ -22,9 +22,15 @@
   <ul>
     <li><strong>playlists</strong>
       <ul>
-        <li><strong>youtube</strong><ul>
-        <?php include('youtube.html'); ?>
-        </ul></li>
+        <li><div id="youtube">
+          <strong><a href="#" id="youtube-title">youtube</a></strong>
+            <div id="youtube-body" style="display: none;">
+              <ul class="space-after">
+                <?php include('youtube.html'); ?>
+              </ul>
+            </div>
+        </div>
+        </li>
         <?php include('playlists.html'); ?>
       </ul>
     </li>

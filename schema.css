@@ -30,6 +30,10 @@ a {
     padding-bottom: 25px;
 }
 
+.space-after {
+    margin-bottom: 1em;
+}
+
 h1 {
     text-align: center;
 }
