@@ -20,7 +20,7 @@
 
   <p>
   <ul>
-    <li><strong>playlists</strong>
+    <li>playlists
       <ul>
         <li><div id="youtube">
           <strong><a href="#" id="youtube-title">youtube</a></strong>

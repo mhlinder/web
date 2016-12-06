@@ -33,6 +33,9 @@ a {
 .space-after {
     margin-bottom: 1em;
 }
+ul.space-after, ol.space-after {
+    margin-top: 1em;
+}
 
 h1 {
     text-align: center;
