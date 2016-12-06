@@ -1,6 +1,10 @@
+#!/usr/bin/env python3
 
 from collections import defaultdict
 from pyItunes import Library
+from string import ascii_letters, digits
+
+alphanum = ascii_letters + digits + '-'
 
 # Get playlist names, given a list of IDs
 def get_names(ids):
@@ -71,6 +75,7 @@ for pn in playlists:
 
     lookup[cid] = pp
 
+# Populate song lists for numbered playlists
 numbers_pl = defaultdict(dict)
 for cid in numbers:
     pl = lookup[cid]
@@ -81,15 +86,72 @@ for cid in numbers:
 
     numbers_pl[parent][p.name] = songs
 
+# For each period (a season), add a list of all playlists
 seasons = sorted(numbers_pl.keys())
-with open('x/playlists.md', 'w') as f:
+with open('x/playlists.html', 'w') as f:
+    keys = list()
     for season in seasons:
-        f.write('\n\n# {0}'.format(season))
-        playlists = numbers_pl[season]
-        for pn in sorted(playlists.keys()):
-            songs = playlists[pn]
-            p_txt = '\n'.join(['* {0}'.format(s) for s in songs])
-            f.write('\n\n\n## {0}\n\n{1}'.format(pn, p_txt))
+        # Header for the season
+        keys.append(season)
+        f.write('''
 
-    f.write('\n\n')
+<li><div id="{0}">
+  <strong><a href="#" id="{0}-title">{1}</a></strong>
+  <div id="{0}-body" style="display: none;">\n<ul>'''.format(season, season.replace('--', '&ndash;')))
+
+        # Loop over playlists
+        season_pls = numbers_pl[season]
+        for pn in sorted(season_pls.keys()):
+            songs = season_pls[pn]
+
+            # Record songs
+            entries = list()
+            for i in range(len(songs)):
+                s = songs[i]
+                entries.append('<li>{1}</li>'.format(i+1, s))
+
+            p_txt   = '\n'.join(entries)
+            p_title = ''.join([c for c in pn.replace(' ', '-') if c in alphanum])
+            keys.append(p_title)
+            f.write('''
+
+
+    <li><div id="{1}">
+      <strong><a href="#" id="{1}-title">{0}</a></strong>
+    
+      <div id="{1}-body" style="display: none;">
+        <ol>
+          {2}
+        </ol>
+      </div> <!-- #{1}-body -->
+    </div> <!-- #{1} -->'''.format(pn, p_title, p_txt))
+        f.write('''
+  </div> <!-- #{0}-body -->
+</div> <!-- #{0} -->
+</li>'''.format(season))
+    
+    f.write('''
+    
+</ul>
+
+<script>
+    var playlists = ['{0}'];
+    for (i = 0; i < playlists.length; i++) {{
+        var pl_key = playlists[i];
+        function toggle_visible(x) {{
+            var in_key = x.target.id.split('-title')[0],
+                key = document.getElementById(in_key.concat('-body'));
+
+            if (key.style.display == 'none') {{
+                key.style.display = 'block';
+            }} else {{
+                key.style.display = 'none';
+            }}
+        }}
+        document.getElementById(pl_key.concat('-title'))
+            .addEventListener('click', function(e) {{ e.preventDefault(); toggle_visible(e); }});
+    }}
+</script>
+
+'''.format("', '".join(keys)))
 

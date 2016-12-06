@@ -20,9 +20,12 @@
 
   <p>
   <ul>
-    <li><b>playlists</b>
+    <li><strong>playlists</strong>
       <ul>
-        <?php include('music.html'); ?>
+        <li><strong>youtube</strong><ul>
+        <?php include('youtube.html'); ?>
+        </ul></li>
+        <?php include('playlists.html'); ?>
       </ul>
     </li>
   </p>
