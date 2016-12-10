@@ -2,10 +2,6 @@
 
 from bs4 import BeautifulSoup
 from requests import get
-from string import Template
-
-with open('music.tmp', 'r') as f:
-    s = Template(f.read())
 
 base = 'https://www.youtube.com'
 r = get('{}/channel/UCigt36ux93khwf5UzwWhX_A/playlists'.format(base))
