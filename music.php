@@ -20,9 +20,18 @@
 
   <p>
   <ul>
-    <li><b>playlists</b>
+    <li>playlists
       <ul>
-        <?php include('music.html'); ?>
+        <li><div id="youtube">
+          <strong><a href="#" id="youtube-title">youtube</a></strong>
+            <div id="youtube-body" style="display: none;">
+              <ul class="space-after">
+                <?php include('youtube.html'); ?>
+              </ul>
+            </div>
+        </div>
+        </li>
+        <?php include('playlists.html'); ?>
       </ul>
     </li>
   </p>
