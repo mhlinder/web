@@ -13,11 +13,7 @@
     <br />
     <br />
 
-    [<a href="https://twitter.com/mhlinder">
-      <?php
-      $tomorrow = new DateTime('tomorrow');
-      echo strtoupper($tomorrow->format('d M y'));
-      ?></a>]
+    [<a href="https://twitter.com/mhlinder"><?php $tomorrow = new DateTime('tomorrow'); echo strtoupper($tomorrow->format('d M y')); ?></a>]
 
     <br />
     <br />
