@@ -88,7 +88,7 @@ for cid in numbers:
 
 # For each period (a season), add a list of all playlists
 seasons = sorted(numbers_pl.keys())
-with open('x/playlists.html', 'w') as f:
+with open('playlists.html', 'w') as f:
     keys = list()
     for season in seasons:
         # Header for the season
@@ -135,7 +135,7 @@ with open('x/playlists.html', 'w') as f:
 </ul>
 
 <script>
-    var playlists = ['youtube', '{0}'];
+    var playlists = ['youtube', 'some-songs', '{0}'];
     for (i = 0; i < playlists.length; i++) {{
         var pl_key = playlists[i];
         function toggle_visible(x) {{

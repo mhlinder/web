@@ -1,9 +1,11 @@
+
 a {
     color: black;
 }
 
 .main {
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .mono {
@@ -11,44 +13,15 @@ a {
     font-size: 10pt;
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    font-size: 10pt;
-}
-
-.header {
-    padding-bottom: 25px;
-}
-
-.header h2 {
-    font-style: normal;
-}
-
-.item {
-    padding-bottom: 25px;
-}
-
 .space-after {
     margin-bottom: 1em;
 }
-ul.space-after, ol.space-after {
+
+.space-before {
     margin-top: 1em;
 }
 
-h1 {
-    text-align: center;
-}
-
 h1.left {
-    text-align: left;
     font-size: 14px;
-}
-
-hr {
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 50px;
 }
 
