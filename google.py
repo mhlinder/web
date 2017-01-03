@@ -1,5 +1,28 @@
 
+# Formatting string
+title_by_artist = "'{0}' by {1}"
+
 db_path = 'ServerDatabase.db'
+# Columns in the table XFILES
+schema = ['Id', 'RootId', 'FileHandle', 'RevisionAdded',
+          'RevisionDeleted', 'FieldUpdateRevision', 'DisplayName',
+          'DisplayPath', 'IsFolder', 'Size', 'FileType', 'Usage',
+          'DateCreated', 'DateModified', 'TranscodingType',
+          'MusicChannels', 'MusicName', 'MusicAlbum', 'MusicArtist',
+          'MusicAlbumArtist', 'MusicComposer', 'MusicComment',
+          'MusicGenre', 'MusicYear', 'MusicDuration',
+          'MusicTrackCount', 'MusicTrackNumber', 'MusicDiscCount',
+          'MusicDiscNumber', 'MusicCompilation', 'MusicBitRate',
+          'MusicSampleRate', 'MusicBpm', 'MusicAlbumArtStart',
+          'MusicAlbumArtSize', 'MusicAlbumArtType', 'MusicAlbumArt',
+          'MusicStart', 'MusicLength', 'MD5Hash', 'ServerId',
+          'MusicRating', 'MusicPlayCount', 'MusicDateAdded',
+          'MusicDatePlayed', 'MusicUploadStatus',
+          'MusicUploadSelected', 'MusicLastScanned', 'MusicIsPodcast',
+          'StoreType', 'MusicLabelCode', 'MusicUitsJson',
+          'MusicContentRating', 'MusicAdditionalMetadataJson',
+          'DeleteAfterUpload', 'RowLastModified',
+          'MusicUploadStatusLastModified'] 
 
 from gmusicapi import Mobileclient
 from re import compile
@@ -10,8 +33,8 @@ from sqlite3 import connect
 conn = connect(db_path)
 c = conn.cursor()
 
-# The first line of secret_google.txt is the Google Music user email,
-# the second line the user password
+# The first line of secret_google.txt is a Google Music user email,
+# the second line the user's password
 with open('secret_google.txt') as f:
     r = [l.strip() for l in f.readlines()]
 
@@ -27,13 +50,19 @@ for playlist in playlists:
     if format_check.search(playlist['name']) is not None:
         for t in playlist['tracks']:
             if t['source'] == '1':
-                print('This file was uploaded')
-                tt = t
+                ## 'trackId' corresponds to column 'ServerId' in table XFILES
+                selector = "SELECT * FROM XFILES WHERE ServerId='{}'" 
+                c.execute(selector.format(t['trackId']))
+                matches = c.fetchall()
+                if len(matches) == 1:
+                    m = matches[0]
+                    lookup = dict(zip(schema, m))
+                    print(title_by_artist.format(lookup['MusicName'],
+                                                 lookup['MusicArtist']))
+                else:
+                    print('Weirdness in playlist {}'.format(playlist['name']))
+                    
             else:
                 track = t['track']
-                print('This file is hosted by Google')
-                print("'{0}' by {1}".format(track['title'], track['artist']))
-            print('---')
-
-# c.execute('SELECT * FROM XFILES')
+                print(title_by_artist.format(track['title'], track['artist']))
 
