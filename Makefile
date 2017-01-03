@@ -1,5 +1,5 @@
 
-.PHONY: youtube resume update Library
+.PHONY: youtube resume update Library db
 
 youtube:
 	python youtube.py
@@ -13,4 +13,7 @@ update:
 
 Library:
 	cp ~/Music/iTunes/iTunes\ Music\ Library.xml x/
+
+db:
+	cp ~/Library/Application\ Support/Google/MusicManager/ServerDatabase.db .
 

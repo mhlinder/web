@@ -20,14 +20,14 @@
 
     [25 AUG 14 -<br />
     &nbsp;<?php echo strtoupper(date('d M y')); ?>&nbsp;UCONN]
-      
+
 
     <br />
     <br />
 
     [19 MAY 14 -
         <br />
-        &nbsp;15 AUG 14&nbsp;&nbsp;&nbsp;<a href="http://o-c-r.org/">OCR</a>]
+        &nbsp;15 AUG 14&nbsp;&nbsp;&nbsp;OCR]
 
     <br />
     <br />
