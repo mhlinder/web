@@ -3,6 +3,14 @@ a {
     color: black;
 }
 
+.center {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
 .main {
     padding-bottom: 20px;
     padding-top: 20px;
