@@ -250,7 +250,7 @@ with(open(outfile, 'a')) as f:
 with open(outfile, 'a') as f:
     f.write('''
 
-    <li class="space-before">[<a href="#" id="flood">flood the gates</a>]</li>
+    <li class="space-before"><div id="flood-text">[<a href="#" id="flood">flood the gates</a>]</div></li>
 </ul>
 
 <script>
@@ -284,14 +284,15 @@ with open(outfile, 'a') as f:
             }}
         }}
 
+        key = document.getElementById('flood-text');
         if (flooded) {{
             flooded = false;
         }} else {{
-            flooded = true
+            flooded = true;
         }}
     }}
     document.getElementById('flood')
-        .addEventListener('click', function(e) {{ e.preventDefault(); toggle_all(); }})
+        .addEventListener('click', function(e) {{ e.preventDefault(); toggle_all(); }});
 </script>
 
 '''.format("', '".join(keys)))

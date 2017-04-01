@@ -1524,7 +1524,7 @@
 </div> <!-- #2017-01-- -->
 </li>
 
-    <li class="space-before">[<a href="#" id="flood">flood the gates</a>]</li>
+    <li class="space-before"><div id="flood-text">[<a href="#" id="flood">flood the gates</a>]</div></li>
 </ul>
 
 <script>
@@ -1558,13 +1558,14 @@
             }
         }
 
+        key = document.getElementById('flood-text');
         if (flooded) {
             flooded = false;
         } else {
-            flooded = true
+            flooded = true;
         }
     }
     document.getElementById('flood')
-        .addEventListener('click', function(e) { e.preventDefault(); toggle_all(); })
+        .addEventListener('click', function(e) { e.preventDefault(); toggle_all(); });
 </script>
 
