@@ -35,6 +35,7 @@
                 <div id="some-song">
                   <strong><a href="#" id="some-songs-title">some songs</a></strong>
                   <div id="some-songs-body" style="display: none;">
+                    <p class="space-before space-after">
                     I listened to a lot of punk when I was growing up, and something I've
                     really dug in the aughts has been the ascendency of
                     <a href="https://www.youtube.com/watch?v=fHYea2R55TQ"
@@ -55,7 +56,8 @@
                     or <a href="https://www.youtube.com/watch?v=040wZ3p5wRk"
                           target="_blank">nympho punks</a>
                     or <a href="https://www.youtube.com/watch?v=sAkW1wXGlU0"
-                          target="_blank">disaffected punks</a>
+                          target="_blank">disaffected punks</a>.
+                    </p>
                   </div>
                 </div>
               </li>

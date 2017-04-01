@@ -250,6 +250,7 @@ with(open(outfile, 'a')) as f:
 with open(outfile, 'a') as f:
     f.write('''
 
+    <li class="space-before">[<a href="#" id="flood">flood the gates</a>]</li>
 </ul>
 
 <script>
@@ -269,6 +270,28 @@ with open(outfile, 'a') as f:
         document.getElementById(pl_key.concat('-title'))
             .addEventListener('click', function(e) {{ e.preventDefault(); toggle_visible(e); }});
     }}
+    
+    var flooded = false;
+    function toggle_all() {{
+        for (i = 0; i < playlists.length; i++) {{
+            var pl_key = playlists[i];
+            key = document.getElementById(pl_key.concat('-body'));
+
+            if (!flooded) {{
+                key.style.display = 'block';
+            }} else {{
+                key.style.display = 'none';
+            }}
+        }}
+
+        if (flooded) {{
+            flooded = false;
+        }} else {{
+            flooded = true
+        }}
+    }}
+    document.getElementById('flood')
+        .addEventListener('click', function(e) {{ e.preventDefault(); toggle_all(); }})
 </script>
 
 '''.format("', '".join(keys)))
