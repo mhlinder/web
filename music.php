@@ -64,9 +64,56 @@
 
               <?php include('playlists.html'); ?>
             </ul>
+
+            <li class="space-before">
+              <div id="flood-text">
+                [<a href="#" id="flood">flood</a> / <a href="#" id="unflood">unflood</a> the gates]
+              </div>
+            </li>
+
           </li>
       </p>
     </div>
+
+  <script>
+   var playlists = ['youtube', 'some-songs',
+                    <?php echo fread(fopen("keys.txt", "r"), filesize("keys.txt")); ?>];
+      for (i = 0; i < playlists.length; i++) {{
+          var pl_key = playlists[i];
+          function toggle_visible(x) {{
+              var in_key = x.target.id.split('-title')[0],
+                  key = document.getElementById(in_key.concat('-body'));
+  
+              if (key.style.display == 'none') {{
+                  key.style.display = 'block';
+              }} else {{
+                  key.style.display = 'none';
+              }}
+          }}
+          document.getElementById(pl_key.concat('-title'))
+              .addEventListener('click', function(e) {{ e.preventDefault(); toggle_visible(e); }});
+      }}
+      
+      function toggle_all(flood) {{
+          for (i = 0; i < playlists.length; i++) {{
+              var pl_key = playlists[i];
+              key = document.getElementById(pl_key.concat('-body'));
+  
+              if (flood) {{
+                  key.style.display = 'block';
+              }} else {{
+                  key.style.display = 'none';
+              }}
+          }}
+  
+      }}
+      document.getElementById('flood')
+          .addEventListener('click', function(e) {{ e.preventDefault(); toggle_all(true); }});
+      document.getElementById('unflood')
+          .addEventListener('click', function(e) {{ e.preventDefault(); toggle_all(false); }});
+  </script>
+
+
 
   </body>
 
