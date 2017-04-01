@@ -51,7 +51,7 @@ for pn in playlists:
     # Register as a child of a parent
     if pid in lookup.keys():
         lookup[pid]['children'].append(cid)
-            
+
     # Identify list of parent nodes, in order, until the root node
     parents = list()
     while pid is not None:
@@ -97,7 +97,7 @@ with open('playlists.html', 'w') as f:
 
 <li><div id="{0}">
   <strong><a href="#" id="{0}-title">{1}</a></strong>
-  <div id="{0}-body" style="display: none;">\n<ul class="space-after">'''.format(season, season.replace('--', '&ndash;')))
+  <div id="{0}-body" style="display: none;">\n<ul class="space-before space-after">'''.format(season, season.replace('--', '&ndash;')))
 
         # Loop over playlists
         season_pls = numbers_pl[season]
@@ -118,9 +118,9 @@ with open('playlists.html', 'w') as f:
 
     <li><div id="{1}">
       <a href="#" id="{1}-title">{0}</a>
-    
+
       <div id="{1}-body" style="display: none;">
-        <ol class="space-after">
+        <ol class="space-before space-after">
           {2}
         </ol>
       </div> <!-- #{1}-body -->
@@ -129,9 +129,9 @@ with open('playlists.html', 'w') as f:
   </div> <!-- #{0}-body -->
 </div> <!-- #{0} -->
 </li>'''.format(season))
-    
+
     f.write('''
-    
+
 </ul>
 
 <script>

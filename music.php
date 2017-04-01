@@ -3,7 +3,7 @@
 <html>
 
   <head>
-    <link rel="stylesheet" type="text/css" href="schema.css">
+    <link rel="stylesheet" type="text/css" href="schema.css?b=1">
     <title>music - mhlinder</title>
   </head>
 
@@ -25,7 +25,7 @@
               <li><div id="youtube">
                 <strong><a href="#" id="youtube-title">youtube</a></strong>
                 <div id="youtube-body" style="display: none;">
-                  <ul class="space-after">
+                  <ul class="space-before space-after">
                     <?php include('youtube.html'); ?>
                   </ul>
                 </div>
