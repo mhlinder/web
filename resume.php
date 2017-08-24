@@ -18,21 +18,20 @@
         <br />
         <br />
 
+        [25 AUG 14 -<br />
+        &nbsp;<?php echo strtoupper(date('d M y')); ?>&nbsp;UCONN]
+
+        <br />
+        <br />
+
         [30 APR 17 -<br />
-        &nbsp;<?php echo strtoupper(date('d M y')); ?>&nbsp;APPLE]
+        &nbsp;11 AUG 17&nbsp;APPLE]
 
         <br />
         <br />
 
         [09 JAN 17 -<br />
-        &nbsp;<?php echo strtoupper(date('d M y')); ?>&nbsp;&nbsp;&nbsp;JAX]
-
-
-        <br />
-        <br />
-
-        [25 AUG 14 -<br />
-        &nbsp;<?php echo strtoupper(date('d M y')); ?>&nbsp;UCONN]
+        &nbsp;26 MAY 17&nbsp;&nbsp;&nbsp;JAX]
 
 
         <br />
