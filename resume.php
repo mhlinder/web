@@ -9,11 +9,7 @@
 <body>
 
     <div class="main mono">
-        [<a href="index">M. HENRY LINDER</a>]
-        <br />
-        <br />
-
-        [<a href="https://twitter.com/mhlinder"><?php $tomorrow = new DateTime('tomorrow'); echo strtoupper($tomorrow->format('d M y')); ?></a>]
+        [<a href="index"><?php $tomorrow = new DateTime('tomorrow'); echo strtoupper($tomorrow->format('d M y')); ?></a>]
 
         <br />
         <br />
