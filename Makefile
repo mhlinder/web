@@ -1,12 +1,10 @@
 
-.PHONY: youtube resume update Library db
+.PHONY: youtube itunes-playlist update Library db
 
 youtube:
 	python youtube.py
-playlists:
-	python itunes.py
-resume:
-	python resumedate.py
+itues-playlists:
+	python itunes-playlists.py
 
 update:
 	bash update_web.sh
