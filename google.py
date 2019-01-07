@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 
+# updated 6 january 2019 using
+# * python==3.7.2rc1
+# * gmusicapi==11.1.1
+
 outfile = 'itunes.html'
 rootdir = '/Users/henry/Dropbox/Programming/active/web'
 
-from collections import defaultdict
-from os.path import join
 from string import ascii_letters, digits
+import re
+import sqlite3
 
 from gmusicapi import Mobileclient
-from re import compile
-from sqlite3 import connect
 
 alphanum = ascii_letters + digits + '-'
 ## Display format -- 'Song' by So and so
@@ -18,8 +20,7 @@ title_by_artist = "'{0}' - {1}"
 def add_to_out(out, s):
     return('{0}{1}'.format(out, s))
 
-def get_google():
-    db_path = 'ServerDatabase.db'
+def get_google(db_path = 'ServerDatabase.db'):
     # Columns in the table XFILES
     schema = ['Id', 'RootId', 'FileHandle', 'RevisionAdded',
               'RevisionDeleted', 'FieldUpdateRevision', 'DisplayName',
@@ -43,7 +44,7 @@ def get_google():
     
     # Establish a connection to a local Google Play MusicManager sqlite
     # database, with local file paths for any songs that I uploaded to Google Play
-    conn = connect(db_path)
+    conn = sqlite3.connect(db_path)
     c = conn.cursor()
     
     # The first line of secret_google.txt is a Google Music user email,
@@ -55,7 +56,7 @@ def get_google():
     api.login(r[0], r[1], Mobileclient.FROM_MAC_ADDRESS)
     
     # All playlists to record start with a three digit integer
-    format_check = compile('^[0-9]{3}(?::|$)')
+    format_check = re.compile('^[0-9]{3}(?::|$)')
     # Note the clash between the search string ':' and the syntax of
     # non-capturing groups in regexes (?:...)
     
