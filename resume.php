@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <link rel="stylesheet" type="text/css" href="schema.css">
-  <title>resume - mhlinder</title>
-</head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="schema.css">
+        <title>resume - mhlinder</title>
+    </head>
 
-<body>
+    <body>
 
-    <div class="main mono">
-        [<a href="index"><?php $tomorrow = new DateTime('tomorrow'); echo strtoupper($tomorrow->format('d M y')); ?></a>]
+        <div class="main mono">
+            [<a href="index"><?php $tomorrow = new DateTime('tomorrow'); echo strtoupper($tomorrow->format('d M y')); ?></a>]
 
-        <br />
-        <br />
+            <br />
+            <br />
 
-        [25 AUG 14 -<br />
-        &nbsp;<?php echo strtoupper(date('d M y')); ?>&nbsp;UCONN]
+            [25 AUG 14 -<br />
+            &nbsp;<?php echo strtoupper(date('d M y')); ?>&nbsp;UCONN]
 
-        <br />
-        <br />
+            <br />
+            <br />
 
-        [30 APR 17 -<br />
-        &nbsp;11 AUG 17&nbsp;APPLE]
+            [22 MAY 18 -<br />
+            &nbsp;11 AUG 18;<br />
+            <br />
+            &nbsp;30 MAY 17 -<br />
+            &nbsp;11 AUG 17&nbsp;APPLE]
 
-        <br />
-        <br />
+            <br />
+            <br />
 
-        [09 JAN 17 -<br />
-        &nbsp;26 MAY 17&nbsp;&nbsp;&nbsp;JAX]
+            [09 JAN 17 -<br />
+            &nbsp;26 MAY 17&nbsp;&nbsp;&nbsp;JAX]
 
 
-        <br />
-        <br />
+            <br />
+            <br />
 
-        [19 MAY 14 -
-        <br />
-        &nbsp;15 AUG 14&nbsp;&nbsp;&nbsp;OCR]
+            [19 MAY 14 -
+            <br />
+            &nbsp;15 AUG 14&nbsp;&nbsp;&nbsp;OCR]
 
-        <br />
-        <br />
+            <br />
+            <br />
 
-        [22 JUN 12 -<br />
-        &nbsp;16 MAY 14 FRBNY]
+            [22 JUN 12 -<br />
+            &nbsp;16 MAY 14 FRBNY]
 
-        <br />
-        <br />
+            <br />
+            <br />
 
-        [27 MAY 12
-        <br />
-        &nbsp;SWARTHMORE COL.]
+            [27 MAY 12
+            <br />
+            &nbsp;SWARTHMORE COL.]
 
         <br />
         <br />
