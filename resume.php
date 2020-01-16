@@ -14,9 +14,17 @@
             <br />
             <br />
 
-            [25 AUG 14 -<br />
-            &nbsp;<?php echo strtoupper(date('d M y')); ?>&nbsp;UCONN]
+            [29 JUL 19 -<br />
+            &nbsp;<?php echo strtoupper(date('d M y')); ?>&nbsp;&nbsp;ODEN]
 
+
+            <br />
+            <br />
+
+            [25 AUG 14 -<br />
+            &nbsp;26 JUL 19&nbsp;UCONN]
+
+<!--
             <br />
             <br />
 
@@ -39,6 +47,7 @@
             [19 MAY 14 -
             <br />
             &nbsp;15 AUG 14&nbsp;&nbsp;&nbsp;OCR]
+-->
 
             <br />
             <br />
