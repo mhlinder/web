@@ -53,7 +53,8 @@ def get_google(db_path = 'ServerDatabase.db'):
         r = [l.strip() for l in f.readlines()]
     
     api = Mobileclient()
-    api.login(r[0], r[1], Mobileclient.FROM_MAC_ADDRESS)
+    # api.login(r[0], r[1], Mobileclient.FROM_MAC_ADDRESS)
+    api.login(r[0], r[1], 'ios:585C130D-12A8-4AAD-847A-A04A64B44A9A')
     
     # All playlists to record start with a three digit integer
     format_check = re.compile('^[0-9]{3}(?::|$)')

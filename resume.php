@@ -9,26 +9,26 @@
     <body>
 
         <div class="main mono">
-            [<a href="index"><?php $tomorrow = new DateTime('tomorrow'); echo strtoupper($tomorrow->format('d M y')); ?></a>]
+            [<a href="index"><?php $tomorrow = new DateTime('tomorrow'); echo strtoupper($tomorrow->format('d M y')); ?></a>&nbsp;&nbsp;&nbsp;NYC]
 
             <br />
             <br />
 
-            [29 JUL 19 -<br />
-            &nbsp;<?php echo strtoupper(date('d M y')); ?>&nbsp;&nbsp;ODEN]
+            [<?php echo strtoupper(date('d M y')); ?> -<br />
+            &nbsp;29 JUL 19&nbsp;&nbsp;ODEN]
 
 
             <br />
             <br />
 
-            [25 AUG 14 -<br />
-            &nbsp;26 JUL 19&nbsp;UCONN]
+            [26 JUL 19 -<br />
+            &nbsp;25 AUG 14&nbsp;UCONN]
 
             <br />
             <br />
 
-            [22 JUN 12 -<br />
-            &nbsp;16 MAY 14 FRBNY]
+            [16 MAY 14 -<br />
+	    &nbsp;22 JUN 12&nbsp;FRBNY]
 
             <br />
             <br />
@@ -40,7 +40,7 @@
         <br />
         <br />
 
-        [15 AUG 90]
+        [15 AUG 90&nbsp;&nbsp;&nbsp;LBC]
 
     </div>
 

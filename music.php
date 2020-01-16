@@ -13,8 +13,8 @@
             <p>
                 <h1 class="left"><a href="index">music</a></h1>
                 <ul>
-                    <li><a href="https://hypem.com/mhlinder">hypem</a></li>
-                    <li><a href="http://last.fm/user/chimerical_brio">last.fm</a></li>
+                    <li><a href="https://hypem.com/mhlinder" target="_blank">hypem</a></li>
+                    <li><a href="http://last.fm/user/chimerical_brio" target="_blank">last.fm</a></li>
                 </ul>
             </p>
 
@@ -22,15 +22,19 @@
                 <ul>
                     <li>playlists
                         <ul>
+<!--
                             <li><div id="hypem">
                                 <strong><a href="#" id="hypem-title">youtube</a></strong>
                                 <div id="hypem-body" style="display: none;">
                                     <ul class="space-before space-after">
-                                        <?php include('hypem.html'); ?>
+					<?php
+//include('hypem.html');
+?>
                                     </ul>
                                 </div>
                             </div>
                             </li>
+-->
                             <li><div id="youtube">
                                 <strong><a href="#" id="youtube-title">youtube</a></strong>
                                 <div id="youtube-body" style="display: none;">
@@ -42,7 +46,7 @@
                             </li>
                             <li>
                                 <div id="some-song">
-                                    <strong><a href="#" id="some-songs-title">some songs</a></strong>
+                                    <strong><a href="#" id="some-songs-title">some songs</a></strong> (ca. 2011-2014)
                                     <div id="some-songs-body" style="display: none;">
                                         <p class="space-before space-after">
                                             I listened to a lot of punk when I was growing up, and something I've

@@ -20,10 +20,10 @@
     &nbsp;&nbsp;##&nbsp;&nbsp;&nbsp;##&nbsp;&nbsp;####<br />
     <br />
     &nbsp;&nbsp;<a href="mailto:mhlinder@gmail.com">@</a>&nbsp;
-    <a href="https://github.com/mhlinder">g</a>&nbsp;
-    <a href="https://www.linkedin.com/in/mhlinder">l</a>&nbsp;
+    <a href="https://github.com/mhlinder" target="_blank">g</a>&nbsp;
+    <a href="https://www.linkedin.com/in/mhlinder" target="_blank">l</a>&nbsp;
     <a href="music">m</a>&nbsp;
-    <a href="https://www.goodreads.com/mhlinder">b</a>
+    <a href="https://www.goodreads.com/mhlinder" target="_blank">s</a>
 
 </div>
 
