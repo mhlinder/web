@@ -24,31 +24,6 @@
             [25 AUG 14 -<br />
             &nbsp;26 JUL 19&nbsp;UCONN]
 
-<!--
-            <br />
-            <br />
-
-            [22 MAY 18 -<br />
-            &nbsp;11 AUG 18;<br />
-            <br />
-            &nbsp;30 MAY 17 -<br />
-            &nbsp;11 AUG 17&nbsp;APPLE]
-
-            <br />
-            <br />
-
-            [09 JAN 17 -<br />
-            &nbsp;26 MAY 17&nbsp;&nbsp;&nbsp;JAX]
-
-
-            <br />
-            <br />
-
-            [19 MAY 14 -
-            <br />
-            &nbsp;15 AUG 14&nbsp;&nbsp;&nbsp;OCR]
--->
-
             <br />
             <br />
 
